@@ -1,0 +1,9 @@
+(jbuild_version 1)
+
+(executable
+ ((name        charruac)
+  (public_name charruac)
+  (package     charrua-unix)
+  (libraries   (charrua-client-lwt lwt.unix cstruct-lwt cstruct-unix
+                cmdliner mirage-time-unix
+                ipaddr tuntap rawlink mtime.clock.os tcpip.unix))))
