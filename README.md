@@ -46,6 +46,12 @@ southern South America.
 
 charrua-client is a DHCP client powered by [charrua-core](https://github.com/haesbaert/charrua-core).
 
+There is an experimental UNIX client which requires a pinned version of `rawlink`.  You can add it with:
+
+```
+opam pin add rawlink https://github.com/yomimono/rawlink.git#dhcp_client_filter
+```
+
 The base library exposes a simple state machine in `Dhcp_client`
 for use in acquiring a DHCP lease.
 
